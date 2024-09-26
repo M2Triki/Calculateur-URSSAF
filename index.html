@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calculateur de Bénéfice</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Calculateur de Bénéfice</h1>
+      <div class="form-group">
+        <label for="purchasePrice">Prix d'achat (€):</label>
+        <input type="number" id="purchasePrice" step="0.01" />
+      </div>
+      <div class="form-group">
+        <label for="sellingPrice">Prix de vente (€):</label>
+        <input type="number" id="sellingPrice" step="0.01" />
+      </div>
+      <div class="form-group">
+        <label for="deliveryCollected">Tarif de livraison collecté (€):</label>
+        <input type="number" id="deliveryCollected" step="0.01" />
+      </div>
+      <div class="form-group">
+        <label for="deliveryPaid">Tarif de livraison payé (€):</label>
+        <input type="number" id="deliveryPaid" step="0.01" />
+      </div>
+      <div class="form-group">
+        <label>URSSAF (%):</label>
+        <input type="text" id="urssaf" value="13.40%" disabled />
+      </div>
+      <button id="calculateButton">Calculer</button>
+      <div id="result"></div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
